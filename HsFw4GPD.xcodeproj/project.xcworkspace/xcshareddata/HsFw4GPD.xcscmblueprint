@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EAD448ECFDBAB3D49ADE0867C43989FF257FD0F1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E67F01F9F968AE77A86D5227840E5CC9AFFD2705" : 0,
+    "EAD448ECFDBAB3D49ADE0867C43989FF257FD0F1" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "616416BE-77FB-43E2-A26B-82F54F079FFD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E67F01F9F968AE77A86D5227840E5CC9AFFD2705" : "GamePlay\/",
+    "EAD448ECFDBAB3D49ADE0867C43989FF257FD0F1" : "HsFw4GPD\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HsFw4GPD",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HsFw4GPD.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gameplay3d\/GamePlay.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E67F01F9F968AE77A86D5227840E5CC9AFFD2705"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/HSakai\/HsFw4GPD.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EAD448ECFDBAB3D49ADE0867C43989FF257FD0F1"
+    }
+  ]
+}

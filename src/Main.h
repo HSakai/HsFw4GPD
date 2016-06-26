@@ -55,9 +55,6 @@ private:
      * Draws the scene each frame.
      */
     bool drawScene(Node* node);
-
-    Scene* _scene;
-    bool _wireframe;
 };
 
 #endif

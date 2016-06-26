@@ -32,6 +32,13 @@
 		5B61611614CCC24C0073B857 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42C932EF1491A5160098216A /* Main.cpp */; };
 		5B61612614CCC24C0073B857 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C932ED1491A4CB0098216A /* icon.png */; };
 		5B61612714CCC24C0073B857 /* res in Resources */ = {isa = PBXBuildFile; fileRef = 42C932F21491A53E0098216A /* res */; };
+		94EA8AB31D1FD3370024344E /* Framework in Resources */ = {isa = PBXBuildFile; fileRef = 94EA8AB21D1FD3370024344E /* Framework */; };
+		94EA8AB71D1FD6D00024344E /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94EA8AB61D1FD6D00024344E /* Utils.cpp */; };
+		94EA8ABB1D1FD6E50024344E /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94EA8AB91D1FD6E50024344E /* SceneManager.cpp */; };
+		94EA8ABD1D1FDB540024344E /* FwScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94EA8ABC1D1FDB540024344E /* FwScene.cpp */; };
+		94EA8ABF1D1FE0720024344E /* Game in Resources */ = {isa = PBXBuildFile; fileRef = 94EA8ABE1D1FE0720024344E /* Game */; };
+		94EA8AC11D1FE0860024344E /* SceneFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94EA8AC01D1FE0860024344E /* SceneFactory.cpp */; };
+		94EA8AC41D1FE0DD0024344E /* SceneSplash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94EA8AC21D1FE0DD0024344E /* SceneSplash.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +95,14 @@
 		5B61612E14CCC24D0073B857 /* HsFw4GPD-ios.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HsFw4GPD-ios.plist"; sourceTree = "<group>"; };
 		5BC4E77F150F879E00CBE1C0 /* gameplay.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gameplay.xcodeproj; path = ../GamePlay/gameplay/gameplay.xcodeproj; sourceTree = SOURCE_ROOT; };
 		5BC4E849150F911D00CBE1C0 /* shaders */ = {isa = PBXFileReference; lastKnownFileType = text; name = shaders; path = ../GamePlay/gameplay/res/shaders; sourceTree = SOURCE_ROOT; };
+		94EA8AB21D1FD3370024344E /* Framework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Framework; sourceTree = "<group>"; };
+		94EA8AB61D1FD6D00024344E /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Utils.cpp; path = Framework/common/Utils.cpp; sourceTree = "<group>"; };
+		94EA8AB91D1FD6E50024344E /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneManager.cpp; path = Framework/core/scene/SceneManager.cpp; sourceTree = "<group>"; };
+		94EA8ABC1D1FDB540024344E /* FwScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FwScene.cpp; path = Framework/core/scene/FwScene.cpp; sourceTree = "<group>"; };
+		94EA8ABE1D1FE0720024344E /* Game */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Game; sourceTree = "<group>"; };
+		94EA8AC01D1FE0860024344E /* SceneFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneFactory.cpp; path = Game/common/scene_setting/SceneFactory.cpp; sourceTree = "<group>"; };
+		94EA8AC21D1FE0DD0024344E /* SceneSplash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneSplash.cpp; path = Game/scene/start/SceneSplash.cpp; sourceTree = "<group>"; };
+		94EA8AC31D1FE0DD0024344E /* SceneSplash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneSplash.h; path = Game/scene/start/SceneSplash.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +178,14 @@
 		42C932C61491A0DB0098216A /* src */ = {
 			isa = PBXGroup;
 			children = (
+				94EA8AC21D1FE0DD0024344E /* SceneSplash.cpp */,
+				94EA8AC31D1FE0DD0024344E /* SceneSplash.h */,
+				94EA8AC01D1FE0860024344E /* SceneFactory.cpp */,
+				94EA8ABE1D1FE0720024344E /* Game */,
+				94EA8ABC1D1FDB540024344E /* FwScene.cpp */,
+				94EA8AB91D1FD6E50024344E /* SceneManager.cpp */,
+				94EA8AB61D1FD6D00024344E /* Utils.cpp */,
+				94EA8AB21D1FD3370024344E /* Framework */,
 				42C932EF1491A5160098216A /* Main.cpp */,
 				42C932F01491A5160098216A /* Main.h */,
 			);
@@ -207,23 +230,6 @@
 				BDBFA85E188347B000342B78 /* libgameplay.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-
-		F1F49B8516AD8C22008715A2 /* MacOSX */ = {
-			isa = PBXGroup;
-			children = (
-				421539C916ADC583001308A3 /* libgameplay.a */,
-			);
-			name = MacOSX;
-			sourceTree = "<group>";
-		};
-		F1F49B8716AD8C30008715A2 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				421539CC16ADC592001308A3 /* libgameplay.a */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +280,7 @@
 			attributes = {
 				LastUpgradeCheck = 0600;
 			};
-			buildConfigurationList = 42C932B61491A0DB0098216A /* Build configuration list for PBXProject "template" */;
+			buildConfigurationList = 42C932B61491A0DB0098216A /* Build configuration list for PBXProject "HsFw4GPD" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -320,9 +326,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94EA8ABF1D1FE0720024344E /* Game in Resources */,
 				42C932EE1491A4CB0098216A /* icon.png in Resources */,
 				428F7BDE15CB131A009ED24C /* game.config in Resources */,
 				42C932F31491A53E0098216A /* res in Resources */,
+				94EA8AB31D1FD3370024344E /* Framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +381,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				42C932F11491A5160098216A /* Main.cpp in Sources */,
+				94EA8AC41D1FE0DD0024344E /* SceneSplash.cpp in Sources */,
+				94EA8ABB1D1FD6E50024344E /* SceneManager.cpp in Sources */,
+				94EA8AC11D1FE0860024344E /* SceneFactory.cpp in Sources */,
+				94EA8AB71D1FD6D00024344E /* Utils.cpp in Sources */,
+				94EA8ABD1D1FDB540024344E /* FwScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +497,7 @@
 				HEADER_SEARCH_PATHS = (
 					../GamePlay/gameplay/src,
 					"../GamePlay/external-deps/include",
+					./src/Framework/include,
 				);
 				INFOPLIST_FILE = "HsFw4GPD-macosx.plist";
 				LIBRARY_SEARCH_PATHS = (
@@ -510,6 +524,7 @@
 				HEADER_SEARCH_PATHS = (
 					../GamePlay/gameplay/src,
 					"../GamePlay/external-deps/include",
+					./src/Framework/include,
 				);
 				INFOPLIST_FILE = "HsFw4GPD-macosx.plist";
 				LIBRARY_SEARCH_PATHS = (
@@ -577,7 +592,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42C932B61491A0DB0098216A /* Build configuration list for PBXProject "template" */ = {
+		42C932B61491A0DB0098216A /* Build configuration list for PBXProject "HsFw4GPD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42C932D81491A0DB0098216A /* Debug */,
