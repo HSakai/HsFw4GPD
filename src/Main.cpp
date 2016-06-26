@@ -5,24 +5,35 @@
 Main game;
 
 Main::Main()
+    : sceneMgr (nullptr)
 {
 }
 
 void Main::initialize()
 {
+    setViewport (Rectangle (0, 0, getWidth (), getHeight ()));
     HsEngine::SceneManager::Initialize ();
+    sceneMgr = HsEngine::SceneManager::GetInstance ();
+    sceneMgr->ReserveNextScene (HsEngine::SceneManager::ROOT_SCENE_ID);
 }
 
 void Main::finalize()
 {
+    HsEngine::SceneManager::Destroy ();
 }
 
 void Main::update(float elapsedTime)
 {
+    sceneMgr->OnStartOfFrame ();
+    
+    const unsigned int deltaTime = (int)elapsedTime;
+    sceneMgr->OnUpdate (deltaTime);
 }
 
 void Main::render(float elapsedTime)
 {
+    clear (CLEAR_COLOR_DEPTH, 0.1f, 0.1f, 0.3f, 1.0f, 1.0f, 0);
+    sceneMgr->OnDraw ();
 }
 
 bool Main::drawScene(Node* node)
@@ -37,7 +48,7 @@ void Main::keyEvent(Keyboard::KeyEvent evt, int key)
         switch (key)
         {
         case Keyboard::KEY_ESCAPE:
-            exit();
+            exit ();
             break;
         }
     }

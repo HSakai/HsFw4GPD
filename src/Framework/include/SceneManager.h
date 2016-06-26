@@ -18,7 +18,7 @@ namespace HsEngine
         void OnKeyDown (const int key);
         void OnUpdate (const uint deltaTime);
         void OnDraw ();
-        void OnEndOfFrame ();
+        void OnStartOfFrame ();
         void OnGameExit ();
         void ReserveNextScene (const int sceneId);
         void ReserveAddScene (const int sceneId);

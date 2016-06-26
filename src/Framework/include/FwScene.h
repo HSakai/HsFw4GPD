@@ -3,6 +3,7 @@
  */
 #pragma once
 
+#include "gameplay.h"
 #include "Utils.h"
 
 namespace HsEngine

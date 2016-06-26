@@ -1,9 +1,13 @@
-#ifndef Main_H_
-#define Main_H_
+#pragma once
 
 #include "gameplay.h"
 
 using namespace gameplay;
+
+namespace HsEngine
+{
+    class SceneManager;
+}
 
 /**
  * Main game class.
@@ -42,12 +46,12 @@ protected:
     /**
      * @see Game::update
      */
-    void update(float elapsedTime);
+    void update(float elapsedTime) override;
 
     /**
      * @see Game::render
      */
-    void render(float elapsedTime);
+    void render(float elapsedTime) override;
 
 private:
 
@@ -55,6 +59,6 @@ private:
      * Draws the scene each frame.
      */
     bool drawScene(Node* node);
-};
 
-#endif
+    HsEngine::SceneManager* sceneMgr;
+};

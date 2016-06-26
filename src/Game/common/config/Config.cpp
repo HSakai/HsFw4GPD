@@ -15,7 +15,7 @@ namespace HsEngine
     const short WINDOW_HEIGHT = 640;
 
     // Escとqキーで一旦終了させてみる
-    const SDL_Keycode EXIT_KEYCODES[] = { SDLK_ESCAPE, SDLK_q };
+    const int EXIT_KEYCODES[] = { gameplay::Keybord::KEY_ESCAPE };
 
     const unsigned EXIT_KEYCODE_LEN = 2;
 }

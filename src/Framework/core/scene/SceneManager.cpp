@@ -113,7 +113,7 @@ namespace HsEngine
         }
     }
 
-    void SceneManager::OnEndOfFrame ()
+    void SceneManager::OnStartOfFrame ()
     {
         ExecuteSceneManagement ();
     }

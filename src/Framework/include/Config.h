@@ -3,7 +3,7 @@
  */
 #pragma once
 
-#include <SDL.h>
+#include <gameplay.h>
 
 namespace HsEngine
 {
@@ -23,7 +23,7 @@ namespace HsEngine
     extern const short WINDOW_HEIGHT;
 
     // キーボード入力でのゲーム終了ショートカット登録
-    extern const SDL_Keycode EXIT_KEYCODES[];
+    extern const gameplay::Keyboard EXIT_KEYCODES[];
 
     // keyCode配列長
     extern const unsigned EXIT_KEYCODE_LEN;
