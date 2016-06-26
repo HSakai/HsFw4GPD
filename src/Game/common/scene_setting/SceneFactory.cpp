@@ -1,6 +1,6 @@
 #include "SceneFactory.h"
 #include "../config/SceneConst.h"
-#include "../../scene/start/SceneSplash.h"
+#include "../../scene/splash/SceneSplash.h"
 
 namespace HsEngine
 {
