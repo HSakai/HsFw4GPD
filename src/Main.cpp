@@ -1,5 +1,6 @@
 #include "Main.h"
 #include "SceneManager.h"
+#include "SoundManager.h"
 
 // Declare our game instance
 Main game;
@@ -13,6 +14,7 @@ void Main::initialize()
 {
     setViewport (Rectangle (0, 0, getWidth (), getHeight ()));
     HsEngine::SceneManager::Initialize ();
+    HsEngine::SoundManager::Initialize ();
     sceneMgr = HsEngine::SceneManager::GetInstance ();
     sceneMgr->ReserveNextScene (HsEngine::SceneManager::ROOT_SCENE_ID);
 }
@@ -20,6 +22,7 @@ void Main::initialize()
 void Main::finalize()
 {
     HsEngine::SceneManager::Destroy ();
+    HsEngine::SoundManager::Destroy ();
 }
 
 void Main::update(float elapsedTime)
