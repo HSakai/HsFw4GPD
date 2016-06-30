@@ -12,11 +12,11 @@ public:
     SceneManagementParam () {}
     ~SceneManagementParam () {}
     const int GetSceneId () { return sceneId; }
-    bool IsNext () { return moveType == SceneMoveType::Next; }
-    bool IsAdd () { return moveType == SceneMoveType::Add; }
-    bool IsReplace () { return moveType == SceneMoveType::Replace; }
-    bool IsReturn () { return moveType == SceneMoveType::Return; }
-    bool IsReturnToRoot () { return moveType == SceneMoveType::ReturnToRoot; }
+    const bool IsNext () { return moveType == SceneMoveType::Next; }
+    const bool IsAdd () { return moveType == SceneMoveType::Add; }
+    const bool IsReplace () { return moveType == SceneMoveType::Replace; }
+    const bool IsReturn () { return moveType == SceneMoveType::Return; }
+    const bool IsReturnToRoot () { return moveType == SceneMoveType::ReturnToRoot; }
 
     void SetNextScene (int nextSceneId)
     {
