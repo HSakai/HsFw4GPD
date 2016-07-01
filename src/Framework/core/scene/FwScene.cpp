@@ -1,6 +1,5 @@
 #include "FwScene.h"
 #include "SceneManager.h"
-#include "gameplay.h"
 
 namespace HsEngine
 {
