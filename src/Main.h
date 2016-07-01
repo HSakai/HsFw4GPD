@@ -54,11 +54,5 @@ protected:
     void render(float elapsedTime) override;
 
 private:
-
-    /**
-     * Draws the scene each frame.
-     */
-    bool drawScene(Node* node);
-
     HsEngine::SceneManager* sceneMgr;
 };

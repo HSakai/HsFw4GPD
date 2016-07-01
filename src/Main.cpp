@@ -39,11 +39,6 @@ void Main::render(float elapsedTime)
     sceneMgr->OnDraw ();
 }
 
-bool Main::drawScene(Node* node)
-{
-    return true;
-}
-
 void Main::keyEvent(Keyboard::KeyEvent evt, int key)
 {
     if (evt == Keyboard::KEY_PRESS)
