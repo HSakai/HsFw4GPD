@@ -1,6 +1,7 @@
 #include "SceneSplash.h"
 #include "SceneManager.h"
 #include "../../../Main.h"
+#include "Skybox.h"
 
 using namespace gameplay;
 
@@ -57,6 +58,6 @@ void SceneSplash::ProcessDraw (const bool isEnterChild)
     Main::getInstance ()->clear (Game::ClearFlags::CLEAR_COLOR_DEPTH, Vector4 (0, 0, 0, 1), 1.0f, 0);
     splashImg->start ();
     splashImg->draw (Main::getInstance ()->getWidth() * 0.5f, Main::getInstance ()->getHeight() * 0.5f,
-        0.0f, 512.0f, 512.0f, 0.0f, 1.0f, 1.0f, 0.0f, splashColor, true);
+       0.0f, 512.0f, 512.0f, 0.0f, 1.0f, 1.0f, 0.0f, splashColor, true);
     splashImg->finish ();
 }

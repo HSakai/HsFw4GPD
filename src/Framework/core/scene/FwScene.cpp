@@ -47,6 +47,11 @@ namespace HsEngine
     {
     }
 
+    bool FwScene::OnDrawNode (gameplay::Node* node)
+    {
+        return true;
+    }
+
     void FwScene::JumpScene (const int sceneId)
     {
         SceneManager::GetInstance ()->ReserveNextScene (sceneId);

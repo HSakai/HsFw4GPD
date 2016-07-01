@@ -23,6 +23,7 @@ namespace HsEngine
         void SetChild (FwScene* scene);
         void DestroyChild ();
     protected:
+        virtual bool OnDrawNode (gameplay::Node* node);
         void JumpScene (const int sceneId);
         void CallScene (const int sceneId);
         void ReturnScene ();
