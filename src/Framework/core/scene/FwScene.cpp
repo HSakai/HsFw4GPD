@@ -3,7 +3,9 @@
 
 namespace HsEngine
 {
-    FwScene::FwScene () : childScene (nullptr)
+    FwScene::FwScene (SceneCtrl* sceneCtrl) :
+        childScene (nullptr),
+        sceneCtrl (sceneCtrl)
     {
     }
 
@@ -13,6 +15,12 @@ namespace HsEngine
         {
             delete childScene;
             childScene = nullptr;
+        }
+
+        if (sceneCtrl != nullptr)
+        {
+            delete sceneCtrl;
+            sceneCtrl = nullptr;
         }
     }
 
@@ -71,9 +79,14 @@ namespace HsEngine
         SceneManager::GetInstance ()->ReserveReturnToRootScene ();
     }
 
-    FwScene* FwScene::GetChild ()
+    FwScene* FwScene::GetChild () const
     {
         return childScene;
+    }
+
+    SceneCtrl* FwScene::GetSceneCtrl () const
+    {
+        return sceneCtrl;
     }
 
     void FwScene::SetChild (FwScene* scene)
